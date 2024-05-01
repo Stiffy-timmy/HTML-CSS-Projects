@@ -1,0 +1,624 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+.navbar{
+    background-color: #0f1111;
+    height: 60px;
+    width:100vw ;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* By default all divs (flex-items) come in same line when display:flex is applied */
+    justify-content: space-between;
+}
+
+.nav-logo{
+    height: 50px;
+    width: 113px; 
+}
+
+.logo{
+    height: 50px;
+    width: 100%;
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    position: relative;
+    bottom: 0.4rem;
+
+}
+
+.border{
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+
+/* ANIMATION */
+
+/* This is a template for transition, but to actually apply it you need to give the command in the 
+respective div box */
+.border:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+/* Box-2 Nav-address styling */
+.nav-address{
+    margin: 5px 2px 5px 0px;
+    padding: 9px 0px;
+    width: 85px;
+}
+
+.add-upper{
+    font-size: 0.85rem;
+    color: #cccccc;
+    padding-left: 20px;
+}
+
+.add-lower{
+    font-size: 1rem; 
+    margin-left: 4px;  
+}
+
+.add-icon{
+    display: flex;
+    /* this is done to make map icon and paragraph in same line  */
+    align-items: center;
+}
+
+.icon{
+    margin-bottom: 3px;
+    margin-left: 4px;
+}
+
+
+/* BOX-3 Search-fill styling */
+.nav-fill{
+    width: 770px;
+    height: 60px;
+}
+
+.nav-search{
+    width: 749px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px; 
+    position: relative; 
+    top: 0.5rem;
+    border-top-left-radius:6px ;
+    border-bottom-left-radius:12.5px ;
+    border-top-right-radius:6px;
+    border-bottom-right-radius:12.5px;
+    
+    
+}
+
+.nav-border-color:hover{
+    border:2px #ffab03 solid
+}
+
+
+/* .input-search:hover + .select-search + .magnify-search {
+    border: 2px solid #ffab03;
+} */
+
+
+.search{
+    width: 50px;
+    height: 40px;
+    border-top-left-radius:6px ;
+    border-bottom-left-radius:14px ;
+
+}
+
+
+
+.select-search{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border-radius: 0;
+    border-top-left-radius:4px ;
+    border-bottom-left-radius:10px ;
+    border: none;
+    background-color: #e0e0e0;
+
+}
+
+.input-search{
+    width: 650px;
+    height: 40px;
+    /* margin: 0px 1px 0px 1px; */
+    font-size: 17px;
+    border: none;
+    color: #e0e0e0;
+     
+    
+    
+}
+
+.magnify-search{
+    background-color: #fac55b;
+    color: black;
+    width: 49px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-top-right-radius:4px;
+    border-bottom-right-radius:10px;
+
+}
+
+.magnify{
+    padding-left: 12px;
+    /* transform: scale(1.15); */
+    font-size: 1.3rem;   
+    /* No need to use transform, as font-size also works for ICONS, SHAPES */
+}
+
+.magnify-search:hover{
+    background-color: #e4a62b;
+    cursor: pointer;
+}
+
+/* BOX-4 styling */
+
+.sign-in{
+    width: 140px;
+    height: 50px;
+}
+
+.sign-inner{
+    width: 130px;
+    height:50px;
+    position: relative;
+    top: 0.4rem;
+    left: 0.3rem;
+}
+span{
+    font-size: 0.80rem;
+    
+}
+
+.account{
+    font-size: 0.90rem;
+    font-weight: bold;
+}
+
+.arrowhead{
+    position: relative;
+    bottom: 5px;
+    left: 2px;
+    font-size: 0.85rem;
+}
+
+/* BOX-4 styling */
+.order{
+    width: 80px;
+    height: 52px;
+}
+
+.order-inner{
+    width: 75px ;
+    height: 50px;
+    position: relative;
+    top: 0.7rem;
+    left: 0.3rem;
+}
+
+.order-upper{
+    font-size: 0.80rem;
+}
+
+.order-lower{
+    font-size: 0.90rem;
+    font-weight: bold;
+}
+
+/* BOX-4 styling */
+.cart-inner i{
+    font-size: 30px;
+}
+
+/* .nav-cart{
+    position: relative;
+    top: 0.5rem;
+    width:100px;       
+    height: 52px;
+} */
+
+.cart-inner{
+    padding-left: 10px;
+    position: relative;
+    top: 0.6rem;
+    width:100px;
+    height: 52px;
+
+}
+
+/* FOR OUTER DIVS */
+/* NOTE:- There's is no necessary to explicitly give height and width to the outer div, as it changes it's size when the content inside it increases or decreases */
+
+
+/* Pannel styling */
+.panel{
+    height: 40px;
+    background-color: #192836;
+    color: white;
+    display: flex;
+}
+
+.panel-icon{
+    position: relative;
+    left: 30px;
+    height: 37px;
+    width: 70px;
+}
+
+.panel-icon-inner{
+    position: relative;
+    top: 0.65rem;
+    left: 0.9rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.deal{
+    position: relative;
+    left: 50px;
+    height: 37px;
+    width: 120px;
+}
+
+.deal-inner{
+    position: relative;
+    top: 0.6rem;
+    left: 0.8rem;
+    height: 37px;
+    width: 100px;
+}
+
+.service{
+    position: relative;
+    left: 70px;
+    height: 37px;
+    width: 150px;
+}
+
+.service-inner{
+    position: relative;
+    top: 0.6rem;
+    left: 0.7rem;
+    height:37px;
+    width:130px;
+}
+
+.register{
+    position: relative;
+    left: 90px;
+    height: 37px;
+    width: 100px;
+}
+
+.register-inner{
+    position: relative;
+    top: 0.6rem;
+    left: 0.95rem;
+    height: 37px;
+    width: 80px;
+}
+
+.card{
+    position: relative;
+    left: 100px;
+    height: 37px;
+    width:120px;
+}
+
+.card-inner{
+    position: relative;
+    top: 0.6rem;
+    left: 1.8rem;
+    height: 37px;
+    width: 100px;
+}
+
+.sell{
+    position: relative;
+    left: 100px;
+    height: 37px;
+    width: 80px;
+}
+
+.sell-inner{
+    position: relative;
+    top: 0.6rem;
+    left: 1.5rem;
+    height: 37px;
+    width: 80px;
+}
+
+.electronics{
+    position: relative;
+    left: 470px;
+    height: 37px;
+    width: 220px;
+}
+
+.electronics-inner{
+    position: relative;
+    top: 0.6rem;
+    left: 0.6rem;
+    height: 37px;
+    width: 200px;
+    font-weight: bold;
+}
+
+
+/* HERO-SECTION OF AMAZON WEBPAGE */
+.hero-section{
+    height: 500px;
+    width: 100vw;
+    background-image: url(hero_image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-section:hover{
+    cursor: pointer;
+}
+
+.hero-message{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 92vw;
+    right: 10px;
+    background-color: white;
+    bottom: 100px;
+    color: black;
+    font-size: 15px;
+}
+
+.hero-message a{
+    text-decoration: none;
+    color: rgb(24, 119, 95);
+}
+
+.hero-message:hover{
+    cursor:auto;
+}
+
+.hero-anchor:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #ca8802;
+}
+
+
+/* SHOPPING SECTION STYLING */
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #d5dbda;
+    position: relative;
+    
+    
+}
+.box{
+    border: 2px solid white;
+    height: 400px;
+    width: 20.5%;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.box-image{
+    height: 300px;
+    width: 15rem;
+    background-size: cover;
+}
+
+.box-inner{
+    position: relative;
+    top: 1.5rem ;
+    left: 1.2rem ;
+}
+
+.box-inner h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.box:hover{
+    cursor: pointer;
+}
+
+.anchor-hover{
+    color:rgb(24, 119, 95);
+    text-decoration:none;
+    font-size: 15px;
+}
+
+.anchor-hover:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #ca8802;
+}
+
+
+
+/* FOOTER-SECTION STYLING */
+footer{
+    margin-top: 15px;
+}
+.foot-panel1{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #283e52;
+    color: white;
+    font-size: 0.85rem;
+}
+
+.foot-panel1:hover{
+    background-color:#405a72 ;
+    cursor: pointer;
+}
+
+.foot-panel2{
+    height: 450px;
+    background-color: #192836;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.ul{
+    margin-top: 40px;
+    height: 300px;
+    line-height: 30px;
+    text-decoration: none;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+.anchor-footer{
+    text-decoration: none;
+    color:#d5dbda;
+    font-size: 15px;
+}
+
+.anchor-footer:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.foot-panel3{
+    position: relative;
+    top: 0.5px;
+    height: 150px;
+    background-color: #192836;
+    /* border-top: 0.1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-amazon{
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+    margin-right: 140px;
+    transform: scale(1.3);
+    position: relative;
+    bottom: 6px;
+}
+
+.panel-amazon:hover{
+    cursor: pointer;
+}
+
+
+.inner3-panel3{
+    height: 50px;
+    width: 500px;
+    display: flex;
+    gap: 10px;
+}
+
+.language{
+    height: 40px;
+    width: 140px;
+    background-color: #192836;
+    border-radius: 3px;
+    color: white;
+}
+
+.panel3-select:hover{
+    cursor: pointer;
+}
+
+
+.dollar{
+    height: 40px;
+    width: 180px;
+    background-color: #192836;
+    border-radius: 3px;
+    color: white;
+    
+}
+
+.usa{
+    height: 40px;
+    width: 180px;
+    background-color: #192836;
+    border-radius: 3px;
+    color:white;
+}
+
+.foot-panel4{
+    height: 100px;
+    background-color: #131a22;
+    
+}
+
+.panel4-upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.panel4-upper a{
+    margin-top: 25px;
+    color:#f0eeee;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.panel4-upper a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.panel4-lower{
+    display: flex;
+    justify-content: center;
+}
+
+.panel4-lower p{
+    margin-top: 10px;
+    color: white;
+}
+
+.shield{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: 11px;
+    right: 17px;
+}
+
+
+
+/* PROJECT COMPLETED */
