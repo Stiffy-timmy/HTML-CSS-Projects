@@ -1,0 +1,1 @@
+# This repo contains detailed codes for cloning given website's home pages.
