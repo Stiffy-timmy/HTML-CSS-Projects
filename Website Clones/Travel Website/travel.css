@@ -1,0 +1,834 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* NAV-UPPER */
+.contact{
+    height: 55px;
+    background-color: #1C1C1C;
+}
+
+i{
+    color: #ED6807;
+    position: relative;
+    right: 23px;
+    top: 17px;
+}
+
+
+.contact p{
+    color: white;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.email-flex{
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 6px;
+    left: 70px;
+}
+
+.contact-ratio{
+    height: 50px;
+    width: 350px;
+}
+
+.email p{
+    position: relative;
+    bottom: 2px;
+}
+
+.address{
+    position: relative;
+    right: 90px;
+}
+
+/* NAV-LOWER */
+.navigation{
+    height: 100px;
+    background-color: #FFFFFF;
+    display: flex;  
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ul{
+    display: flex;
+    width: 700px;
+    gap: 30px;
+    align-items: center;
+    transform: scale(1.25);
+    list-style-type: none;
+    position: relative;
+    left: 90px;
+}
+
+li:hover{
+    color: #ED6807;
+    text-decoration: underline #ED6807;
+    cursor: pointer;
+}
+
+.nav-logo:hover{
+    cursor: pointer;
+}
+
+.hero{
+    height: 600px;
+    background-image: url(Assests/Canada.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.hero-inner{
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    transform: scale(1.4);
+}
+
+.la-vida{
+    width: 130px;
+    transform: scale(2);
+    line-height: 17px;
+    font-weight: 800;
+    position: relative;
+    left: 180px;
+    margin: 20px 0px 20px 0px;
+}
+
+.la-text{
+    width: 450px ;
+    line-height: 20px;
+    margin: 20px;
+    position: relative;
+    top: 30px;
+}
+
+.hero-inner button{
+    color: white;
+    background-color: #ED6807;
+    border: none;
+    height: 30px;
+    width: 100px;
+    position: relative;
+    top: 20px;
+    border-radius: 4px;
+}
+
+.hero-inner button:hover{
+    cursor: pointer;
+}
+
+.program{
+    font-weight: 600;
+    transform: scale(1.1);
+    position: relative;
+    top: 30px;
+}
+
+.select-program-outer{
+    height: 80px;
+    width: 1015px;
+    background-color: #ED6807;
+    position: relative;
+    left: 180px;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.program-text{
+    height: 30px ;
+    width: 800px;
+    position: relative;
+    top: 23px;
+    right: 20px;
+    border: none;
+}
+
+.program-text::placeholder{
+    color: #302f2f;
+    font-size: 15px;
+    padding: 0px 0px 0px 20px;
+}
+
+.arrow{
+    height: 30px;
+    width: 50px;
+    background-color: #1C1C1C;
+    color: white;
+    position: relative;
+    top: 23px;
+    right: 10px;
+}
+
+.select-program-outer div:hover{
+    cursor: pointer;
+}
+
+.arrow i{
+    position: relative;
+    left: 1px;
+    top: 8px;
+}
+
+.citizenship{
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.citizenship-img{
+    height: 400px;
+    width: 450px;
+    background-image: url(Assests/women.png);
+    background-size: cover;
+}
+
+.residency-text{
+    height: 260px;
+    width: 480px;
+    position: relative;
+    bottom: 10px;
+}
+
+.citizenship-text{
+    height: 350 ;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.residency{
+    height: 90px;
+    width: 230px;
+    font-weight: bolder;
+    transform: scale(1.8);
+    position: relative;
+    left: 90px;
+    top: 30px;
+}
+
+.citizenship-text p{
+    position: relative;
+    left: 5px;
+    top: 40px;
+    color: #ED6807;
+    text-decoration: underline black 1px; 
+    /* We can even write like this */
+}
+
+.aeroplane{
+    height: 400px;
+    width: 400px;
+    background-image: url(Assests/clipart-airplane-dot-6\ 1.png);
+    background-size: cover;
+    position: relative;
+    left: 200px;
+    bottom: 35px;
+    overflow: auto;
+}
+
+.country{
+    height: 810px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.country-upper div{
+    height: 100px;
+    width: 350px;
+    font-weight: bolder;
+    transform: scale(1.8);
+    position: relative;
+    top: 60px;
+}
+
+.country-upper p{
+    color: #ED6807;
+    transform: scale(1.2);
+}
+
+.country-lower{
+    height: 500px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Giving gap and align-content both is necessary */
+    gap: 20px;
+    align-content: center;
+    position: relative;
+    left:130px;
+    top: 60px;
+    transform: scale(1.3);
+}
+
+.country-select{
+    height: 150px;
+    width: 400px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    box-shadow: 8px 8px 5px 1px rgba(190, 190, 190, 0.445),
+               -6px -6px 10px -1px rgba(161, 161, 159, 0.521)  
+}
+
+.country-select:hover{
+    cursor: pointer;
+}
+
+.country-all{
+    height: 110px;
+    width:170px;
+    position: relative;
+    left: 20px;
+}
+
+.country1{
+    background-image: url(Assests/country1.png);
+    background-size: cover;
+}
+
+.country2{
+    background-image:url(Assests/country2.png) ;    
+    background-size: cover;
+}
+
+.country3{
+    background-image: url(Assests/country3.png);
+    background-size: cover;
+}
+
+.country4{
+    background-image: url(Assests/country4.png);
+    background-size: cover;
+}
+
+.country-select p{
+    position: relative;
+    transform: scale(1.1);
+    position: relative;
+
+}
+
+.visa-info{
+    height: 100px;
+    width: 200px;
+    text-align: left;
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 12px;
+}
+
+.country-exception{
+    position: relative;
+    right: 20px;
+}
+
+.PORTUGAL{
+    position: relative;
+    right: 11px;
+}
+
+.exception{
+    position: relative;
+    left: 4px;
+}
+
+.exception1{
+    position: relative;
+    right: 15px;
+}
+
+.country button{
+    color: white;
+    background-color: #ED6807;
+    border: none;
+    height: 40px;
+    width: 120px;
+    position: relative;
+    top: 100px;
+    left: 15px;
+    border-radius: 4px;
+}
+
+.country button:hover{
+    cursor: pointer;
+}
+
+.features{
+    height: 550px;
+    background-image: url(Assests/invest.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.invest-upper{
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+
+.option{
+    color:#ED6807;
+}
+
+.option-lower{
+    font-weight: bolder;
+    transform: scale(1.9);
+}
+
+
+.investment-lower{
+    height: 300px;
+    width: 900px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.investment-lower-all{
+    height: 240px;
+    width: 250px;
+    background-color: whitesmoke;
+    border-radius: 10px;   
+}
+
+.investment-lower-all:hover{
+    cursor: pointer;
+}
+
+.passport{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left:30px;
+    padding-top: 10px;
+}
+
+.passport-logo{
+    height: 60px;
+    width: 40px;
+    background-image: url(Assests/Vector.png);
+    background-size: contain;
+}
+
+.para-bold{
+    transform: scale(1.1);
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.more{
+    color: #ED6807;
+    transform: scale(1.3);
+    padding-left: 27px;
+    font-weight: bold;
+}
+
+
+.home-logo{
+    height: 60px;
+    width: 40px;
+    transform: scale(3.4);
+    position: relative;
+    left: 120px;
+    top: 15px;
+}
+
+
+/* DON'T do align-items:centre; */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.airplane{
+    height: 60px;
+    width: 40px;
+    transform: scale(3.4);
+    position: relative;
+    left: 120px;
+    top: 19px;
+}
+.immigration{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.experience{
+    height: 1300px;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exper-upper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.exper-upper div{
+    color: #ED6807;
+    transform: scale(2.8);
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.exper-upper p{
+    width: 450px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.exper-middle{
+    height: 190px;
+    width: 900px;
+    display: flex;
+    gap: 45px;
+    position: relative;
+    bottom: 27px;
+}
+
+.exper-middle-all{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-all{
+    position: relative;
+    left: 23px;
+    font-size: 55px;
+}
+
+.count{
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.room-upper{
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+}
+
+.examples{
+    height: 40px;
+    width: 200px;
+    transform: scale(2.8);
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+}
+
+.room{
+    height: 300px;
+    width: 1000px;
+    display: flex;
+    gap:30px;
+}
+
+.room-pics{
+    height: 380px;
+    width: 450px;
+    background-color: white;
+}
+
+.room-pics:hover{
+    cursor: pointer;
+}
+
+.pic-above{
+    display: inline-block;
+    position: relative;
+    bottom: 32px;
+    background-color: white;
+}
+
+.pics-inside{
+    height: 168px;
+    width: 319px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 37px;
+    padding-left: 20px;
+}
+
+.experience button{
+    color: white;
+    background-color: #ED6807;
+    height: 40px;
+    width: 120px;
+    border: none;
+    position: relative;
+    top: 10px;
+    border-radius: 4px;
+}
+
+.experience button:hover{
+    cursor: pointer;
+}
+
+.subscribe{
+    height: 100px;
+    width: 90vw;
+    background-color:#ED6807;
+    position: relative;
+    bottom: 50px;
+}
+
+.subscribe{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.subscribe-text{
+    font-size: 25px;
+    color: white;
+    line-height: 38px;
+    padding: 10px 0px 0px 60px;
+    position: relative;
+    left: 30px;
+}
+
+.now{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.subscribe-select{
+    height: 100px;
+    width: 800px;
+    position: relative;
+    left: 60px;
+}
+
+.email-sub{
+    height: 30px;
+    width: 500px;
+    padding: 10px 10px 10px 20px;
+    position: relative;
+    top: 20px;
+}
+
+.arrow-email{
+    border: none;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 30px;
+    top: 13px;
+}
+
+.div-arrow{
+    height: 53px;
+    width: 100px;
+    background-color: black;
+    position: relative;
+    left: 535px;
+    bottom: 34px;
+}
+
+.div-arrow:hover{
+    cursor: pointer;
+}
+
+.footer{
+    height: 600px;
+    background-color: rgb(27, 27, 27);
+    z-index: -2;
+}
+
+.footer-img{
+    height: 600px;
+    background-image: url(Assests/world.png);
+    background-size: cover;
+    position: relative;
+    bottom: 100px;
+    z-index: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-info-all{
+    height: 400px;
+    width: 200px;
+    z-index: 2;
+    display: inline-block;
+}
+
+.footer-info1{
+    height: 400px;
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.footer-info1 img:hover{
+    cursor: pointer;
+}
+
+
+.footer-info1-text{
+    margin-top: 30px;
+    width: 300px;
+}
+
+.footer-info1-para{
+    margin-top: 70px;
+}
+
+
+.footer-info2{
+    padding-top: 80px;
+    position: relative;
+    top: 40px;
+}
+
+.orange-color{
+    color: #ED6807;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.footer-info2-ul{
+    margin-top: 40px;
+    list-style-type: none;
+    height: 300px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    color: white;
+
+}
+
+.footer-info2-ul-li:hover{
+    color: rgb(194, 191, 191);
+    text-decoration: underline white;
+}
+
+.footer-info3{
+    padding-top: 80px;
+    padding-top: 80px;
+    position: relative;
+    top: 40px;
+}
+
+.footer-info3-ul{
+    margin-top: 40px;
+    list-style-type: none;
+    height: 300px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    color: white;
+}
+
+.footer-info3-ul li:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-info4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+    position: relative;
+    bottom: 30px;
+}
+
+.footer-info5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+    position: relative;
+    bottom: 30px;
+}
+
+.social-media{
+    height: 30px;
+    width: 300px;
+    background-image: url(Assests/social-media.png);
+    background-size: cover;
+    color: white;
+    z-index: 3;
+    position:absolute;
+    bottom: 30px;
+}
+
+.extra{
+    height: 30px;
+    width: 300px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 105px;
+    right: 30px;
+}
+
+.extra p:hover{
+    color: rgb(194, 191, 191);
+    text-decoration: underline white;
+    cursor: pointer;
+}
